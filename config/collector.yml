@@ -1,0 +1,13 @@
+collector:
+  bulk_load: True
+  src:
+    url: 'https://randomuser.me/api/'
+    records_to_fetch: 1000
+
+  target:
+    db_type: 'snowflake'
+    user: ''
+    password: ''
+    account: ''
+    database: 'API_DATA'
+    schema: 'USER'
